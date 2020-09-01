@@ -80,10 +80,20 @@ var EmulatorConfig = map[string]EmulatorMeta{
 		Height: 240,
 	},
 	"snes": {
-		Path:   "assets/emulator/libretro/cores/mednafen_snes_libretro",
-		Width:  256,
-		Height: 224,
-	},
+	Path:   "assets/emulator/libretro/cores/mednafen_snes_libretro",
+	Width:  256,
+	Height: 224,
+  },
+	// "snes": {
+	// 	Path:   "assets/emulator/libretro/cores/snes9x2010_libretro",
+	// 	Width:  256,
+	// 	Height: 224,
+	// },
+	// "mame": {
+	// 	Path:   "assets/emulator/libretro/cores/mame2003_plus_libretro",
+	// 	Width:  240,
+	// 	Height: 160,
+	// },
 	"mame": {
 		Path:   "assets/emulator/libretro/cores/fbneo_libretro",
 		Width:  240,

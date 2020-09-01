@@ -171,6 +171,9 @@ func (o *Server) WS(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
+	// Reverse proxy hack todo: fix
+	upgrader.CheckOrigin = func(r *http.Request) bool { return true }
+
 	// be aware of ReadBufferSize, WriteBufferSize (default 4096)
 	// https://pkg.go.dev/github.com/gorilla/websocket?tab=doc#Upgrader
 	c, err := upgrader.Upgrade(w, r, nil)
